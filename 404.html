@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lencería Keren</title>
+<script>
+  // GitHub Pages no conoce rutas como /catalogos y sirve este archivo.
+  // Guardamos a dónde quería ir la persona y la mandamos al index, que
+  // lee "rutaPendiente" y muestra la sección correcta.
+  try{
+    sessionStorage.setItem("rutaPendiente", location.pathname + location.search);
+  }catch(e){}
+  location.replace("/");
+</script>
+</head>
+<body></body>
+</html>
