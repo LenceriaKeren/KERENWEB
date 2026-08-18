@@ -6,7 +6,20 @@
 <title>Lencería Keren · Tienda Mayorista</title>
 <meta name="description" content="Tienda mayorista de Lencería Keren — pedidos por WhatsApp, lista de precios y catálogos">
 <meta property="og:title" content="Lencería Keren · Tienda Mayorista">
-<meta property="og:description" content="Armá tu pedido mayorista y envialo por WhatsApp">
+<meta property="og:description" content="Armá tu pedido mayorista">
+  <meta property="og:type" content="website">
+<meta property="og:url" content="https://keren.com.ar/">
+<meta property="og:site_name" content="Lencería Keren">
+<meta property="og:locale" content="es_AR">
+<meta property="og:image" content="https://keren.com.ar/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Lencería Keren · Venta mayorista · Av. Pueyrredón 115, CABA">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://keren.com.ar/">
+<meta name="theme-color" content="#E74275">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -35,7 +48,19 @@
     font-size:15px;
     line-height:1.4;
   }
-
+ .intro{
+    max-width:760px; margin:0 auto 18px; padding:16px 18px;
+    background:var(--papel); border:1px solid var(--linea);
+    border-radius:var(--radio-lg);
+  }
+  .intro-title{
+    font-family:'Fraunces',serif; font-weight:600; font-size:1.05rem;
+    margin-bottom:8px; color:var(--tinta);
+  }
+  .intro p{ font-size:.85rem; color:#5C4A54; line-height:1.55 }
+  .intro-datos{ list-style:none; margin-top:12px; display:grid; gap:5px }
+  .intro-datos li{ font-size:.82rem; color:#5C4A54 }
+  .intro-datos strong{ color:var(--tinta); font-weight:600 }
   /* ============ HEADER ============ */
   header{
     background:var(--papel);
@@ -717,7 +742,7 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="14" y2="17"/></svg>
     </button>
     <a class="topbar-brand" href="/" id="logoLink" aria-label="Ir al inicio">
-      <span class="topbar-title">Lencería <em>Keren</em></span>
+      <h1 class="topbar-title">Lencería <em>Keren</em></h1>
     </a>
     <div class="topbar-right">
       <a class="icon-circle ig" href="https://instagram.com/lenceriakeren" target="_blank" rel="noopener" aria-label="Instagram">
@@ -773,9 +798,24 @@
     <div class="spinner"></div>
     Cargando tienda…
   </div>
-
-  <div class="banner-wrap" id="bannerWrap">
-    <div class="banner-placeholder">Espacio para tu banner</div>
+  <div class="banner-wrap" id="bannerWrap"
+     <div class="banner-wrap" id="bannerWrap"></div>
+  <section class="intro">
+    <h2 class="intro-title">Venta mayorista de lencería en Once</h2>
+    <p>
+      Venta mayorista de lencería en Buenos Aires. Combos mayoristas, promociones
+      y amplia selección de marcas &mdash; Kaury, Marcela Koury, Natubel, Tiento,
+      Brigitte, Cocot y más &mdash; con más de 1.000 artículos en stock
+      permanente para revendedoras y negocios.
+    </p>
+    <ul class="intro-datos">
+      <li><strong>Dirección:</strong> Av. Pueyrredón 115, CABA (Once)</li>
+      <li><strong>Horario:</strong> Lunes a viernes de 9:30 a 18:30 h · Sábados de 9:30 a 18 h</li>
+      <li><strong>Compra mínima:</strong> $60.000</li>
+      <li><strong>Medios de pago:</strong> Efectivo, transferencia y tarjetas</li>
+      <li><strong>Envíos:</strong> Envíos a todo el país · El costo de envío varía según destino</li>
+    </ul>
+  </section>
   </div>
 
   <div class="sticky-bar" id="stickyBar">
